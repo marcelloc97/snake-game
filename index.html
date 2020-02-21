@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Snake Game" />
+  <meta name="author" content="Marcello Carvalhal" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="src/css/global-styles.css" />
+
+  <title>Snake Game - Home</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title w-100 text-center">
+      Bem-vindo(a) ao repositório<br />
+      SNAKE GAME
+    </h1>
+    
+    <div class="sub-description text-center">
+      <h3>Para dar início, clique em um dos quadrados abaixo para jogar um modo!</h3>
+      <h5>Em breve haverá mais modos como Multiplayer e Desafios.</h5>
+    </div>
+
+    <h3 id="how-to-text" class="text-center mar-top-30" style="-moz-user-select: none; -webkit-user-select: none;">Como jogar?</h5>
+    <div id="how-to-show" class="text-center w-25 mar-top-10">
+      <p>
+        É bem simples.<br />
+        <br />
+        Ao jogar o modo <b>Singleplayer</b>, tudo que precisa fazer é mover a <s>cobrinha</s> (retângulo que se move...) e coletar as <s>frutas</s> (quadrados vermelhos).<br />
+        Para controlar a "cobrinha", utilize W, A, D ou S.
+      </p>
+      <br />
+      <p>
+        Jogando o modo <b>Two players</b>, cada um controla uma "cobrinha". Uma verde e outra amarela.<br />
+        O objetivo é o mesmo, porém, vocês "competem" entre si.<br />
+        Mas um <b>detalhe</b>!!! Se um morrer, começa tudo de novo. <b><em>Um desafio a mais para vocês</em></b>! <br />
+        Para controlar suas "cobrinhas", o jogador nº 1 usa W, A, D ou S, o jogador nº 2 usa as setas! <br />
+        <br />
+        Fácil não é?
+      </p>
+    </div>
+
+    <h2 class="text-center mar-top-30">Selecione um modo</h2>
+    
+    <div id="mode-container">
+      <div class="mode-item" title="singleplayer">
+        <img src="src/assets/img/singleplayer-thumbnail.png" alt="singleplayer banner">
+        <div>Um jogador</div>
+      </div>
+      <div class="mode-item" title="twoplayer">
+        <img src="src/assets/img/twoplayer-thumbnail.png" alt="twoplayer banner">
+        <div>Dois jogadores (Local)</div>
+      </div>
+    </div>
+  </div>
+  <h6 class="text-center mar-top-100">Criado por Marcello Carvalhal</h6>
+  <h6 class="text-end">v1.1</h6>
+
+
+  <script src="src/js/anime.min.js"></script>
+  <script>
+    anime({
+      targets: 'body',
+      translateY: [-100, 0],
+      opacity: [0, 1],
+      easing: 'easeOutElastic(1,1)',
+      duration: 1000
+    })
+  </script>
+  
+  <script>
+    const modes = document.getElementsByClassName('mode-item');
+    const howToText = document.getElementById('how-to-text');
+    const howToShow = document.getElementById('how-to-show');
+
+
+    modes[0].addEventListener('click', () => {
+      window.location.href = "game-single.html";
+    });
+
+    modes[1].addEventListener('click', () => {
+      window.location.href = "game-two.html";
+    });
+
+    howToText.addEventListener('click', () => {
+      howToShow.style.display = "block";
+    });
+
+  </script>
+</body>
+</html>

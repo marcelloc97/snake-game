@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #aaa; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.title {
+  font-size: 32pt;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.sub-description {
+  margin-top: 30px;
+}
+
+.w-50 {
+  min-width: 50%;
+}
+
+.w-25 {
+  min-width: 25%;
+}
+
+.w-100 {
+  min-width: 100%;
+}
+
+.mar-10 {
+  margin: 10px;
+}
+
+.mar-top-10 {
+  margin-top: 10px;
+}
+
+.mar-30 {
+  margin: 30px;
+}
+
+
+.mar-top-30 {
+  margin-top: 30px;
+}
+
+.mar-100 {
+  margin: 100px;
+}
+
+.mar-top-100 {
+  margin-top: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* Game Modes */
+div#mode-container {
+  width: 100%;
+  height: max-content;
+  padding: 16px;
+
+  background: #333;
+  color: #fff;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+div.mode-item {
+  width: 300px;
+  height: 250px;
+  margin: auto 8px;
+}
+
+div.mode-item img {
+  width: 100%;
+  height: 75%;
+}
+
+div.mode-item div {
+  width: 100%;
+  height: 25%;
+  margin-bottom: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+}
+
+
+#how-to-show {
+  display: none;
+}

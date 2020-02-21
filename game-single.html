@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Snake Game" />
+  <meta name="author" content="Marcello Carvalhal" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="src/css/game-styles.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/global-styles.css" />
+
+  <title>Snake Game - Singlepayer</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title w-100 text-center">
+      SNAKE GAME - SINGLEPLAYER
+    </h1>
+    <div id="scoreboard"></div>
+    <div class="game-container">
+      <canvas id="game-canvas"></canvas>
+    </div>
+  </div>
+
+  <script src="src/js/game-single.js"></script>
+
+  <script src="src/js/anime.min.js"></script>
+  <script>
+    anime({
+      targets: 'body',
+      scale: [0, 1],
+      opacity: [0, 1],
+      easing: 'easeOutCubic',
+      duration: 500
+    })
+  </script>
+</body>
+</html>
