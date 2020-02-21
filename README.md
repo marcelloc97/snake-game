@@ -32,10 +32,10 @@
 
   ### Requisitos
 
-    O que você precisa é só acessar [esta](https://marcelloc97.github.io/snake-game) página para jogar. \
-    Necessário conexão para acessar a página. \
-    Pontuações serão armazenadas no seu computador. Para ter acesso offline. \
-    **PS.: Apenas no navegador em um computador. Não disponível para Mobile.**
+  O que você precisa é só acessar [esta](https://marcelloc97.github.io/snake-game) página para jogar. \
+  Necessário conexão para acessar a página. \
+  Pontuações serão armazenadas no seu computador. Para ter acesso offline. \
+  **PS.: Apenas no navegador em um computador. Não disponível para Mobile.**
 
     O jogo foi constituído com:
   
