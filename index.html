@@ -4,9 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="description" content="Snake Game" />
   <meta name="author" content="Marcello Carvalhal" />
+  <meta name="tags" content="snake, game, github, webgl, javascript, html, css, marcello, carvalhal" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Styles -->
   <link rel="stylesheet" type="text/css" href="src/css/global-styles.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/style-utils.css" />
+  <link rel="stylesheet" type="text/css" href="src/css/index-style.css" />
 
   <title>Snake Game - Home</title>
 </head>
@@ -59,21 +64,15 @@
 
 
   <script src="src/js/anime.min.js"></script>
-  <script>
-    anime({
-      targets: 'body',
-      translateY: [-100, 0],
-      opacity: [0, 1],
-      easing: 'easeOutElastic(1,1)',
-      duration: 1000
-    })
-  </script>
   
   <script>
+    window.gameStarted = false;
+    window.gameStartedTwo = false;
     const modes = document.getElementsByClassName('mode-item');
     const howToText = document.getElementById('how-to-text');
     const howToShow = document.getElementById('how-to-show');
 
+    let toggle = false;
 
     modes[0].addEventListener('click', () => {
       window.location.href = "game-single.html";
@@ -84,7 +83,34 @@
     });
 
     howToText.addEventListener('click', () => {
-      howToShow.style.display = "block";
+      if(howToShow.style.display !== 'block') showAnimation.play();
+    });
+
+    // Animations //
+    
+    // Entrace animation
+    anime({
+      targets: 'body',
+      translateY: [-100, 0],
+      opacity: [0, 1],
+      easing: 'easeOutElastic(1,1)',
+      duration: 1000
+    });
+
+    // Show How To Play animation
+    const showAnimation = anime({
+      targets: '#how-to-show',
+      opacity: 1,
+      translateY: {
+        value: [-50, 0],
+        duration: 500,
+      },
+      duration: 600,
+      begin: () => {
+        howToShow.style.display = "block";
+      },
+      easing: 'easeOutQuad',
+      autoplay: false
     });
 
   </script>

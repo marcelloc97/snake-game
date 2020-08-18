@@ -73,6 +73,8 @@
   Fácil não é?
 
 
+# Licença
+[MIT](https://github.com/marcelloc97/snake-game/blob/master/LICENSE)
 
 # Meu GITHUB
   O repositório está livre! Use **``git clone https://github.com/marcelloc97/snake-game``** para poder editar. \

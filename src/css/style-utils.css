@@ -1,0 +1,63 @@
+.container {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.title {
+  font-size: 32pt;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.sub-description {
+  margin-top: 30px;
+}
+
+.w-50 {
+  min-width: 50%;
+}
+
+.w-25 {
+  min-width: 25%;
+}
+
+.w-100 {
+  min-width: 100%;
+}
+
+.mar-10 {
+  margin: 10px;
+}
+
+.mar-top-10 {
+  margin-top: 10px;
+}
+
+.mar-30 {
+  margin: 30px;
+}
+
+
+.mar-top-30 {
+  margin-top: 30px;
+}
+
+.mar-100 {
+  margin: 100px;
+}
+
+.mar-top-100 {
+  margin-top: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.absolute {
+  position: absolute;
+}

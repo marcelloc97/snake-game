@@ -1,0 +1,25 @@
+{
+  "name": "snake-game-final-desktop",
+  "version": "1.0.0",
+  "description": "[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/marcelloc97/snake-game/blob/master/LICENSE)\r   ![](https://img.shields.io/badge/version-v1.0-red)\r   ![](https://img.shields.io/badge/languages-3-blue)\r   [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://code.visualstudio.com/)\r   ![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelloc97/snake-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelloc97/snake-game/issues"
+  },
+  "homepage": "https://github.com/marcelloc97/snake-game#readme",
+  "dependencies": {
+    "discord-rpc": "^3.1.0",
+    "electron": "^8.2.3"
+  }
+}

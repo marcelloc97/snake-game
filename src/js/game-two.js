@@ -55,6 +55,8 @@ var time = 100; // time in milliseconds
 //// Observation: Player wins when score gets to 100 (but not yet)
 
 window.onload = function initialize() {
+  window.gameStartedTwo = true;
+
   WIDTH = 35;
   HEIGHT = 30;
 
@@ -63,8 +65,8 @@ window.onload = function initialize() {
 
   canvas.width = WIDTH;
   canvas.height = HEIGHT;
-  canvas.style.width = `${WIDTH * 18}px`;
-  canvas.style.height = `${HEIGHT * 18}px`;
+  canvas.style.width = `${WIDTH * 16}px`;
+  canvas.style.height = `${HEIGHT * 16}px`;
 
   document.addEventListener("keydown", keyPush);
 
@@ -127,6 +129,11 @@ window.onload = function initialize() {
 function run() {
   update();
   render();
+
+  window.score = score;
+  window.highscore = highscore;
+  window.score2 = score2;
+  window.highscore2 = highscore2;
 }
 
 // Game Updater Function
